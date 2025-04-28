@@ -1,0 +1,16 @@
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\bin\Debug\Earth.exe.config
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\bin\Debug\Earth.exe
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\bin\Debug\Earth.pdb
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\obj\Debug\Earth.csproj.AssemblyReference.cache
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\obj\Debug\MainWindow.g.cs
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\obj\Debug\App.g.cs
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\obj\Debug\Earth_MarkupCompile.cache
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\obj\Debug\Earth_MarkupCompile.lref
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\obj\Debug\MainWindow.baml
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\obj\Debug\Earth.g.resources
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\obj\Debug\Earth.Properties.Resources.resources
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\obj\Debug\Earth.csproj.GenerateResource.cache
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\obj\Debug\Earth.csproj.CoreCompileInputs.cache
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\obj\Debug\Earth.exe
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\obj\Debug\Earth.pdb
+C:\Users\arili\OneDrive\Документы\WpfAppChepalenko\WpfApp2\Earth\obj\Debug\GeneratedInternalTypeHelper.g.cs

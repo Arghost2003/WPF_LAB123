@@ -1,0 +1,90 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\arili\\source\\repos\\CubeGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F5FDB89B-FC34-4C44-95BB-C66684B27AE7}|CubeGame\\CubeGame.csproj|c:\\users\\arili\\source\\repos\\cubegame\\cubegame\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5FDB89B-FC34-4C44-95BB-C66684B27AE7}|CubeGame\\CubeGame.csproj|solutionrelative:cubegame\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5FDB89B-FC34-4C44-95BB-C66684B27AE7}|CubeGame\\CubeGame.csproj|c:\\users\\arili\\source\\repos\\cubegame\\cubegame\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F5FDB89B-FC34-4C44-95BB-C66684B27AE7}|CubeGame\\CubeGame.csproj|solutionrelative:cubegame\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5FDB89B-FC34-4C44-95BB-C66684B27AE7}|CubeGame\\CubeGame.csproj|c:\\users\\arili\\source\\repos\\cubegame\\cubegame\\trackballdecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5FDB89B-FC34-4C44-95BB-C66684B27AE7}|CubeGame\\CubeGame.csproj|solutionrelative:cubegame\\trackballdecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5FDB89B-FC34-4C44-95BB-C66684B27AE7}|CubeGame\\CubeGame.csproj|c:\\users\\arili\\source\\repos\\cubegame\\cubegame\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F5FDB89B-FC34-4C44-95BB-C66684B27AE7}|CubeGame\\CubeGame.csproj|solutionrelative:cubegame\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TrackballDecorator.cs",
+              "DocumentMoniker": "C:\\Users\\arili\\source\\repos\\CubeGame\\CubeGame\\TrackballDecorator.cs",
+              "RelativeDocumentMoniker": "CubeGame\\TrackballDecorator.cs",
+              "ToolTip": "C:\\Users\\arili\\source\\repos\\CubeGame\\CubeGame\\TrackballDecorator.cs",
+              "RelativeToolTip": "CubeGame\\TrackballDecorator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T13:46:00.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\arili\\source\\repos\\CubeGame\\CubeGame\\App.xaml",
+              "RelativeDocumentMoniker": "CubeGame\\App.xaml",
+              "ToolTip": "C:\\Users\\arili\\source\\repos\\CubeGame\\CubeGame\\App.xaml",
+              "RelativeToolTip": "CubeGame\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-14T12:18:05.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\arili\\source\\repos\\CubeGame\\CubeGame\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "CubeGame\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\arili\\source\\repos\\CubeGame\\CubeGame\\MainWindow.xaml",
+              "RelativeToolTip": "CubeGame\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-14T12:16:24.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\arili\\source\\repos\\CubeGame\\CubeGame\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CubeGame\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\arili\\source\\repos\\CubeGame\\CubeGame\\MainWindow.xaml.cs",
+              "RelativeToolTip": "CubeGame\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T12:16:24.079Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

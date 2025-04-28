@@ -1,0 +1,626 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        xmlns:mycode="clr-namespace:WpfApp2.Cube"
+        xmlns:mycode1="clr-namespace:WpfApp2.Tetr"
+        xmlns:mycode2="clr-namespace:WpfApp2.Okt"
+        xmlns:mycode3="clr-namespace:WpfApp2.Iso"
+        xmlns:mycode4="clr-namespace:WpfApp2.Dod"
+        xmlns:mycode5="clr-namespace:WpfApp2.Cone"
+        xmlns:mycode6="clr-namespace:WpfApp2.Sphere"
+        xmlns:mycode7="clr-namespace:WpfApp2.Tor"
+        xmlns:mycode8="clr-namespace:WpfApp2.Par"
+        xmlns:mycode9="clr-namespace:WpfApp2.Prism"
+        xmlns:mycode10="clr-namespace:WpfApp2.Pir"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="660" Width="1050" MouseDown="Window_MouseDown">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="195*"/>
+            <ColumnDefinition Width="436*"/>
+            <ColumnDefinition Width="77*"/>
+            <ColumnDefinition Width="84*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Triggers>
+            <EventTrigger RoutedEvent="Grid.MouseDown">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <!-- Анимация для Cube1 -->
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateX1" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateY1" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateZ1" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+
+                        <!-- Анимация для Tetr1 -->
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateX2" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="-720" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateY2" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="-720" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateZ2" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="-720" 
+                            Duration="0:0:5"/>
+
+                        <!-- Анимация для Okt1 -->
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateX3" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="-720" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateY3" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="-720" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateZ3" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="-720" 
+                            Duration="0:0:5"/>
+
+                        <!-- Анимация для Iso1 -->
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateX4" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="-720" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateY4" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="-720" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateZ4" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="-720" 
+                            Duration="0:0:5"/>
+
+                        <!-- Анимация для Dod1 -->
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateX5" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="-720" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateY5" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="-720" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateZ5" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="-720" 
+                            Duration="0:0:5"/>
+
+                        <!-- Анимация для Cone1 -->
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateX6" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateY6" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateZ6" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateX7" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateY7" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateZ7" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateX8" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateY8" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateZ8" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateX9" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateY9" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateZ9" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateX10" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateY10" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateZ10" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateX11" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="180" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateY11" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="180" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateZ11" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="90" To="180" 
+                            Duration="0:0:5"/>
+
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateX13" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateY13" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="rotateZ13" 
+                            Storyboard.TargetProperty="Angle" 
+                            From="0" To="360" 
+                            Duration="0:0:5"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Grid.Triggers>
+        <Viewport3D HorizontalAlignment="Right" Width="470" Grid.Column="1" Margin="0,0,42,0">
+            <Viewport3D.Camera>
+                <!-- Установка камеры - перспективная проекция -->
+                <PerspectiveCamera Position="0,0,5" LookDirection="0,0,-2" />
+            </Viewport3D.Camera>
+            <Viewport3D.Children>
+                <ModelVisual3D>
+                    <ModelVisual3D.Content>
+                        <!-- Установка освещения - прямой свет -->
+                        <DirectionalLight Color="White" Direction="-1,-1,-2" />
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>
+
+                <!-- Cube1 -->
+                <mycode:Cube3D x:Name="Cube1"
+                    Size="0.5" 
+                    Position="0,0,0" 
+                    Front="#9acd32" 
+                    Top="#9acd32" 
+                    Left="#9acd32" 
+                    Back="#9acd32" 
+                    Bottom="#9acd32" 
+                    Right="#9acd32">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <!-- Вращение вокруг осей X, Y, Z -->
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D 
+                                        Axis="1,0,0" 
+                                        Angle="0" 
+                                        x:Name="rotateX1"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D 
+                                        Axis="0,1,0" 
+                                        Angle="45" 
+                                        x:Name="rotateY1"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D 
+                                        Axis="0,0,1" 
+                                        Angle="0" 
+                                        x:Name="rotateZ1"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <TranslateTransform3D OffsetX="-1" OffsetY="0" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                </mycode:Cube3D>
+
+                <!-- Tetr1 -->
+                <mycode1:Tetr3D x:Name="Tetr1"
+                    Size="0.5" 
+                    Position="0,0,0" 
+                    Front="#9acd32" 
+                    Top="#ff0000" 
+                    Left="#0000ff" 
+                    Back="#ffff00">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <!-- Вращение вокруг осей X, Y, Z -->
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D 
+                                        Axis="1,0,0" 
+                                        Angle="0" 
+                                        x:Name="rotateX2"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D 
+                                        Axis="0,1,0" 
+                                        Angle="45" 
+                                        x:Name="rotateY2"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D 
+                                        Axis="0,0,1" 
+                                        Angle="0" 
+                                        x:Name="rotateZ2"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <TranslateTransform3D OffsetX="-0.2" OffsetY="0" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                </mycode1:Tetr3D>
+
+                <!-- Okt1 -->
+                <mycode2:Okt3D x:Name="Okt1"
+                    Size="0.5" 
+                    Position="0,0,0" 
+                    Front="#9acd32" 
+                    Back="#ff0000" 
+                    Left="#0000ff" 
+                    Right="#ffff00"
+                    Top="#ff00ff" 
+                    Bottom="#00ffff">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <!-- Вращение вокруг осей X, Y, Z -->
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D 
+                                        Axis="1,0,0" 
+                                        Angle="0" 
+                                        x:Name="rotateX3"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D 
+                                        Axis="0,1,0" 
+                                        Angle="45" 
+                                        x:Name="rotateY3"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D 
+                                        Axis="0,0,1" 
+                                        Angle="0" 
+                                        x:Name="rotateZ3"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <TranslateTransform3D OffsetX="-1.7" OffsetY="0" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                </mycode2:Okt3D>
+
+                <!-- Iso1 -->
+                <mycode3:Iso3D x:Name="Iso1"
+                    Size="0.35" 
+                    Position="0,0,0" 
+                    Front="#9acd32" 
+                    Back="#ff0000" 
+                    Left="#0000ff" 
+                    Right="#ffff00"
+                    Top="#ff00ff" 
+                    Bottom="#00ffff">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <!-- Вращение вокруг осей X, Y, Z -->
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="1,0,0" Angle="0" x:Name="rotateX4"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,1,0" Angle="45" x:Name="rotateY4"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,0,1" Angle="0" x:Name="rotateZ4"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <TranslateTransform3D OffsetX="1" OffsetY="0" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                </mycode3:Iso3D>
+
+                <!-- Dod1 -->
+                <mycode4:Dod3d x:Name="Dod1"
+                    Size="0.03" 
+                    Position="0,0,0" 
+                    Color="Aqua">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <!-- Вращение вокруг осей X, Y, Z -->
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="1,0,0" Angle="0" x:Name="rotateX5"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,1,0" Angle="45" x:Name="rotateY5"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,0,1" Angle="0" x:Name="rotateZ5"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <TranslateTransform3D OffsetX="1.7" OffsetY="0" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                </mycode4:Dod3d>
+
+                <!-- Cone1 -->
+                <mycode5:Cone3D x:Name="Cone1"
+    Radius="0.2"
+    Height="0.6"
+    Position="0,0,0" 
+    Color="Aqua">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <!-- Вращение вокруг осей X, Y, Z -->
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="1,0,0" Angle="0" x:Name="rotateX6"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,1,0" Angle="45" x:Name="rotateY6"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,0,1" Angle="0" x:Name="rotateZ6"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <TranslateTransform3D OffsetX="-1.7" OffsetY="0.5" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                </mycode5:Cone3D>
+                <mycode6:Sphere3D x:Name="Sphere1"
+                    Radius="0.25"
+                    Position="0,0,0"
+                    Color="Blue">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="1,0,0" Angle="0" x:Name="rotateX7"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,1,0" Angle="45" x:Name="rotateY7"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,0,1" Angle="0" x:Name="rotateZ7"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                </mycode6:Sphere3D>
+                <mycode7:Тор x:Name="Tor1"
+                    MajorRadius="0.3"
+                    MinorRadius="0.1"
+                    Position="0,0,0"
+                    Color="Green">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="1,0,0" Angle="0" x:Name="rotateX8"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,1,0" Angle="45" x:Name="rotateY8"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,0,1" Angle="0" x:Name="rotateZ8"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <TranslateTransform3D OffsetX="-0.5" OffsetY="0.6" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                </mycode7:Тор>
+                <mycode8:Par3D x:Name="Par3D"
+                    Position="0,0,0">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="1,0,0" Angle="0" x:Name="rotateX9"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,1,0" Angle="180" x:Name="rotateY9"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,0,1" Angle="0" x:Name="rotateZ9"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <TranslateTransform3D OffsetX="0" OffsetY="-0.6" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                </mycode8:Par3D>
+                <mycode9:Prism3D x:Name="Prism3D"
+                    Position="0,0,0">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="1,0,0" Angle="0" x:Name="rotateX10"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,1,0" Angle="90" x:Name="rotateY10"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,0,1" Angle="0" x:Name="rotateZ10"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <TranslateTransform3D OffsetX="1.5" OffsetY="-0.6" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                </mycode9:Prism3D>
+                <mycode8:Par3D x:Name="Par3D2"
+                    Position="0,0,0">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="1,0,0" Angle="0" x:Name="rotateX11"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,1,0" Angle="180" x:Name="rotateY11"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,0,1" Angle="0" x:Name="rotateZ11"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <TranslateTransform3D OffsetX="1.5" OffsetY="0.6" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                    <mycode9:Prism3D x:Name="Prism3D2"
+                    Position="0,0,0">
+                        <ModelVisual3D.Transform>
+                            <Transform3DGroup>
+                                <RotateTransform3D>
+                                    <RotateTransform3D.Rotation>
+                                        <AxisAngleRotation3D Axis="1,0,0" Angle="0" x:Name="rotateX12"/>
+                                    </RotateTransform3D.Rotation>
+                                </RotateTransform3D>
+                                <RotateTransform3D>
+                                    <RotateTransform3D.Rotation>
+                                        <AxisAngleRotation3D Axis="0,1,0" Angle="90" x:Name="rotateY12"/>
+                                    </RotateTransform3D.Rotation>
+                                </RotateTransform3D>
+                                <RotateTransform3D>
+                                    <RotateTransform3D.Rotation>
+                                        <AxisAngleRotation3D Axis="0,0,1" Angle="0" x:Name="rotateZ12"/>
+                                    </RotateTransform3D.Rotation>
+                                </RotateTransform3D>
+                                <TranslateTransform3D OffsetX="0" OffsetY="0.5" OffsetZ="0"/>
+                            </Transform3DGroup>
+                        </ModelVisual3D.Transform>
+                    </mycode9:Prism3D>
+                </mycode8:Par3D>
+                
+                <mycode10:Pir3D x:Name="Pir3D"
+                    Position="0,0,0">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="1,0,0" Angle="0" x:Name="rotateX13"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,1,0" Angle="90" x:Name="rotateY13"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,0,1" Angle="0" x:Name="rotateZ13"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <TranslateTransform3D OffsetX="0.3" OffsetY="1" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                </mycode10:Pir3D>
+            </Viewport3D.Children>
+        </Viewport3D>
+    </Grid>
+</Window>

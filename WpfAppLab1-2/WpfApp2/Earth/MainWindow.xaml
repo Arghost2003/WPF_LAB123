@@ -1,0 +1,71 @@
+﻿<Window x:Class="Earth.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Earth"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" MouseDown="Window_MouseDown">
+    <Grid>
+        <Grid.Triggers>
+            <EventTrigger RoutedEvent="Grid.MouseDown">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <!-- Анимация для Cube1 -->
+                        <DoubleAnimation 
+                    Storyboard.TargetName="rotateX1" 
+                    Storyboard.TargetProperty="Angle" 
+                    From="0" To="360" 
+                    Duration="0:0:5"/>
+                        <DoubleAnimation 
+                    Storyboard.TargetName="rotateY1" 
+                    Storyboard.TargetProperty="Angle" 
+                    From="0" To="360" 
+                    Duration="0:0:5"/>
+                        <DoubleAnimation 
+                    Storyboard.TargetName="rotateZ1" 
+                    Storyboard.TargetProperty="Angle" 
+                    From="0" To="360" 
+                    Duration="0:0:5"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Grid.Triggers>
+        <Viewport3D HorizontalAlignment="Right" Width="470" Grid.Column="1" Margin="0,0,42,0">
+            <Viewport3D.Camera>
+                <!-- Установка камеры - перспективная проекция -->
+                <PerspectiveCamera Position="0,0,5" LookDirection="0,0,-2" />
+            </Viewport3D.Camera>
+            <Viewport3D.Children>
+                <ModelVisual3D>
+                    <ModelVisual3D.Content>
+                        <!-- Установка освещения - прямой свет -->
+                        <DirectionalLight Color="White" Direction="-1,-1,-2" />
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>
+                <local:Sphere3d x:Name="Earth">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="1,0,0" Angle="0" x:Name="rotateX1"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,1,0" Angle="90" x:Name="rotateY1"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,0,1" Angle="0" x:Name="rotateZ1"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <TranslateTransform3D OffsetX="-1" OffsetY="0" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                </local:Sphere3d>
+            </Viewport3D.Children>
+        </Viewport3D>
+    </Grid>
+</Window>
